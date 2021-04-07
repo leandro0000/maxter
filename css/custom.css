@@ -1,0 +1,632 @@
+html,body{
+	width: 100%;
+}
+
+@font-face{
+	font-family: "montserratsemibold";
+	src: url(../fonts/montserratsemibold.ttf);
+}
+
+@font-face{
+	font-family: "officesquare";
+	src: url(../fonts/officesquare.otf);
+}
+
+@font-face{
+	font-family: "montserratlight";
+	src: url(../fonts/montserratlight.ttf);
+}
+
+@font-face{
+	font-family: "montserratmedium";
+	src: url(../fonts/montserratmedium.ttf);
+}
+
+@font-face{
+	font-family: "montserratregular";
+	src: url(../fonts/montserratregular.ttf);
+}
+
+.mn-top{
+	background-color: #000;
+	padding: 12px 0px;
+}
+
+.mn-top ul{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	vertical-align: middle;
+	padding: 0px;
+}
+
+.mn-top ul li{
+	display: inline-block;
+}
+
+.mn-top ul li a{
+	color: #fff;
+	font-family: sans-serif;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+}
+
+.mn-top ul li img{
+	object-fit: contain;
+	height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+ 
+.mn-top ul li:first-child{
+	margin-right: 28px;
+}
+
+.sec-logs{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	border-bottom: 2px solid #000;
+	padding: 25px 0px;
+}
+
+.sec-logs ul{
+	display: table;
+	margin: auto;
+	padding: 0px;
+}
+
+.sec-logs ul li{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.sec-logs ul li:nth-child(2){
+	margin: 0px 200px;
+}
+
+.sec-logs ul li:nth-child(2) img{																		/* HAY QUÉ RESPETAR LOS ESPACIOS */
+	width: 310px;
+}
+
+.btn-reg{
+	background-color: #b5aa87;
+    display: table;
+    color: #000;
+    padding: 17px 30px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.mn-ppl{
+	display: table;
+	margin: auto;
+	margin-top: 4px;	
+}
+
+.mn-ppl ul{
+	padding: 0px;
+}
+
+.mn-ppl ul li{
+	display: inline-block;
+	margin: 0px 15px;
+}
+
+.mn-ppl ul li a{
+	display: table;
+	padding: 20px 7px;
+	transition: all 0.5s ease-in-out;
+	color: #000;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.mn-ppl ul li a:hover{
+	background-color: #d2cbb5;
+	text-decoration: none;
+
+}
+
+.banner img{
+	width: 100%;
+}
+
+.tit-pro{
+	display: table;
+	margin:auto;
+	font-family: "officesquare";
+	font-size: 47px;
+	text-transform: uppercase;
+	position: relative;
+	padding-top: 48px;                 /* Acá iba Margin Top */
+}
+
+.tit-pro span{
+	font-family: "montserratsemibold";
+	font-size: 44px;
+    margin-left: 5px;
+	color: #b5aa87;
+}
+
+.tit-pro:before{
+	position: absolute;
+	content: "";
+	background-image: url(../img/rectangle7.png);			/*Sin content, width, height el before no aparece*/
+	background-size: 100%;
+	width: 173px;
+	height: 3px;
+	left: 50%;
+	bottom: -22px;
+	transform: translate(-50%, 0%);
+}
+
+.txt-pro{
+	font-family: "montserratlight";
+	margin: auto;
+	text-align: center;
+	width: 850px;
+	font-size: 18px;
+	margin-top: 50px;
+}
+
+.col-pro{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 58px;
+}
+
+.card-pro img{
+	width: 100%;
+}
+
+/* A partir de aquí, los cambios se le deben hacer a Col pro o a Card pro */
+
+.card-pro h2{
+	font-family: "montserratmedium";
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.card-pro p{
+	font-family: "montserratlight";
+	font-weight: 700;
+	font-size: 16px;
+	text-align: left;
+	color: #333;
+	margin: 0px 0px 20px;
+}
+
+.card-pro a{
+	font-family: "montserratregular";
+	color: #b5aa87;
+	margin-bottom: 52px;
+	display: block;                         /* Se le agrega esto a las etiquetas a porque éstas etiquetas no se comportan como bloques, entonces al hacer esto comienzan a hacerlo */
+	font-size: 18px;
+}
+
+.tit-show{
+	background-color: #b5aa87;
+	padding: 35px 0px 65px;
+	margin-top: 31px;
+}
+
+.txt-show{
+	display: table;
+	margin: auto;
+	font-family: "office-square";
+	font-size: 43px;
+	text-transform: uppercase;
+	position: relative; 
+}
+.txt-show span{
+	font-family:"montserrat-semibold"; 
+	font-size: 40px;
+	color: #fff;
+}
+.txt-show:before{
+	content: "";
+	width: 173px;
+	height: 3px;
+	background-image: url(../img/raya1.png);
+	background-size: 100%;
+	position: absolute;
+	left: 50%;
+	bottom: -30px;
+	transform: translate(-50%,0%);
+}
+.cont-por{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+}
+.src-por{
+	background-image: url(../img/bckg2.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+	padding-top: 40px;
+	padding-bottom: 1px;		/* Bug de Css, para que coja el margin del h2 de abajo, la clase tit-fnl */
+
+}
+
+.src-por ul{
+	display: table;
+	margin: auto;
+}
+.src-por ul li{
+	display: inline-block;
+	margin: 0px 90px;
+}
+
+.src-por ul li:nth-child(1) img{
+	width: 190px;
+    border-bottom: 3px solid #b5aa87;
+    padding: 0px 40px 10px;
+}
+
+.src-por ul li:nth-child(2) img{
+	width: 250px;
+	border-bottom: 3px solid #b5aa87;
+	padding: 0px 40px 10px;
+}
+
+.src-por ul li h2{
+	color: #b5aa87;
+	font-size: 18px;
+	text-align: center;
+	margin: 15px auto 40px;
+	font-family: "montserratlight";
+	display: table;
+	
+}
+
+.card-por{
+	background-color: #fff;
+	padding-bottom: 15px;				/* El padding se le agrega al contenedor y no a la <a> */
+}
+
+.card-por img{
+	width: 100%;
+}
+
+.card-por h3{
+	font-family: "montserratmedium";
+	font-size: 20px;
+	color: #000;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.card-por a{
+	font-family: "montserratlight";
+	display: table;
+	margin: auto;
+	color: #b1b1b1;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.tit-fnl{
+	font-family: "montserratlight";
+	display: table;
+	margin: 45px auto !important;
+	color: #fff;
+	font-size: 18px;
+}
+
+.sec-gall img{
+	width: 100%;
+}
+
+.no-pad{
+	padding: 0px!important;
+}
+
+.pos-rel{
+	position: relative;
+}
+
+.lnk-gall{
+	background-color: rgba(0,0,0,0.55);			/* El rgb se saca de photoshop, el A determina la opacidad del color */
+	color: #fff;
+	font-family: "montserratmedium";
+	font-size: 20px;
+	text-transform: uppercase;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-49.6%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	display: block;
+    width: 96%;
+    height: 91%;
+    line-height: 290px;					/* Altura del texto */
+    text-align: center;
+}
+
+.lnk-gall:hover{
+	width: 37%;
+    height: 12%;
+    line-height: 38px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sec-news{
+	background-color: #f9f9f9;
+	padding-bottom: 48px;
+}
+
+.bor-news{
+    background-color: #fff;
+    padding-bottom: 5px;
+}
+
+.bcktxt-news{
+	padding: 1px 12px;
+	border-bottom: 2.5px solid #b1b1b1;
+}
+
+.bcktxt-news a{
+	margin-bottom: 12px;		/* Se agrega éste margin para que no afecte a la a
+								   de la Section de arriba idéntica a esta. Esto 
+								   también se podía hacer manipulando el padding 
+								   hacia abajo (0px 0px xpx) del .bcktxtnews pero 
+								   entonces el borde inferior tendría un límite 
+								   hasta el cual poder subir, y no sería una opción 
+								   tan eficiente y limpia como lo es ésta. 			*/
+}
+
+.sec-ins{
+	padding: 16px 0px 46px;
+}
+
+.tit-twi{
+	margin-top: 0px;
+}
+
+.tit-twi span{
+	text-transform: lowercase;
+}
+
+.sec-ins ul{
+	width: 100%;
+	padding: 0px;
+	margin: 90px 0px 0px;
+	display: inline-block;
+}
+.sec-ins ul li{
+	display: inline-block;
+	width: 20%;
+	float: left;
+}
+
+.sec-ins ul li img{
+	width: 100%;
+}
+
+footer{
+	background-color: #000;
+	padding: 50px 0px;
+}
+
+.col-foot{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	border-bottom: 3px solid #fff;
+}
+
+.lst-lg{
+	padding: 0px;
+	margin: 0px;
+}
+.lst-lg li{
+	display: inline-block;
+}
+
+.lst-lg li:first-child{
+	margin-right: 40px;
+}
+
+.lst-lg li img{
+	width: 210px;
+}
+
+.txt-foot{
+	color: #fff;
+	font-family: "montserratlight";
+	width: 70%;
+	padding-left: 20px;
+	font-size: 13px;
+	margin-top: 20px;
+}
+
+.lst-red{
+	padding: 5px 0px 0px 20px;
+	margin-top: 22px
+}
+
+.lst-red li{
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.lst-red li:nth-child(1) img{
+	object-fit: cover;
+    height: 22px;
+    width: 17px;
+    object-position: 5px 0px;
+}
+
+.lst-red li:nth-child(2) img{
+	object-fit: cover;
+    height: 22px;
+    width: 25px;
+    object-position: -20px 0px;
+}
+
+.lst-red li:nth-child(3) img{
+	object-fit: cover;
+    height: 22px;
+    width: 25px;
+    object-position: -50px 0px;
+}
+
+.lst-nav{
+	padding: 0px;
+	display: inline-table;
+}
+
+.lst-nav li{
+	color: #fff;
+	font-size: 17px;
+	font-family: "officesquare";
+	list-style: none;
+}
+
+.lst-inf{
+	padding: 0px;
+    margin: 0px;
+    display: inline-table;
+    list-style: none;
+    vertical-align: top;
+    font-family: "montserratlight";
+    color: #fff;
+    font-size: 15px;
+    margin-left: 48px;
+    text-align: left!important;
+}
+
+.lst-inf li{
+	margin-bottom: 4px;
+	padding-left: 35px;
+}
+
+.lst-inf li:last-child{
+	padding-left: 0px!important;
+	margin-top: -6px;
+}
+
+@media screen and (max-width: 750px){
+	.mn-top, .sec-logs, .mn-ppl{
+		display: none;
+	}
+	
+	.txt-pro{
+		width: 90%;
+	}
+	
+	.lnk-gall{
+		line-height: 179px;
+	}
+
+	.lst-lg li, .lst-red{
+		display: table;
+    	margin: auto;
+	}
+
+	.lst-lg li:first-child {
+    margin-right: auto;
+    margin-bottom: 10px;
+	}
+
+	.txt-foot {
+    color: #fff;
+    font-family: "montserratlight";
+    width: 70%;
+    margin: 20px auto;
+    font-size: 13px;
+ 	}
+
+	.lst-lg li, .lst-red {
+    display: table;
+    margin: 20px auto;
+	}
+	.lst-nav {
+
+    display: table;
+    margin: auto;
+	}
+	
+	.lst-nav li {
+    text-align: center;
+	}
+	
+	.lst-inf {
+    padding: 0px;
+    margin: 0px;
+    display: table;
+    list-style: none;
+    vertical-align: top;
+    font-family: "montserratlight";
+    color: #fff;
+    font-size: 15px;
+    margin: auto;
+    text-align: center;
+	}
+	
+	.lst-inf li {
+    margin: 4px auto;
+    padding-left: 0px;
+    display: table;
+	}
+}
+.ct-reg{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: rgba(0,0,0,0.80);
+	display: none;
+	z-index: 999;
+	padding: 35px 80px;
+}
+.inpt-eml{
+	background-color: transparent;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	height: 50px;
+	padding: 0px 0px 0px 15px;
+	color: #fff;
+	font-family: sans-serif;
+}
+.inpt-snd{
+	height: 50px;
+	border: 0px;
+	background-color: #fff;
+	color: #000;
+	font-family: sans-serif;
+	width: 120px;
+}
+.cls-frm{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background-color: #fff;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	color: #000;
+	cursor: pointer;
+}
